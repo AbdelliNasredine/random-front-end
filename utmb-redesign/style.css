@@ -8,37 +8,33 @@ body {
   margin: 0;
   padding: 0;
 
-  font: 14px/1.5 acumin-pro, sans-serif;
+  font: 16px/1.5 acumin-pro, sans-serif;
   font-weight: 400;
   text-rendering: optimizeLegibility;
 }
 
 a {
-  font-weight: 700;
-  color: #999999;
   text-decoration: none;
-}
-
-a:hover {
-  color: rgb(230, 61, 0);
+  color: #000000;
+  font-weight: 700;
 }
 
 /* ---UTILS------------------ */
-
-/* container styling */
 .container {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0 2.4rem;
 }
-/* end container */
-
-/* flexbox */
 .flex {
   display: flex;
 }
-
+.w-full {
+  flex: 1;
+}
+.my-2 {
+  margin: 2rem 0;
+}
 /* ---END UTILS------------------ */
 
 /* header */
@@ -62,6 +58,10 @@ header nav {
 .nav-bar .nav-item a {
   display: block;
   padding: 1rem;
+}
+
+.nav-bar .nav-item:hover > a {
+  color: rgb(233, 79, 23);
 }
 
 .nav-bar .nav-item:hover::after {
@@ -95,9 +95,16 @@ header nav {
   animation: fade-down 1s cubic-bezier(0, 1.12, 0.26, 0.96);
 }
 
-.dropdown .sub-nav * {
+.dropdown .sub-nav li a,
+.side-nav .nav-item a {
   font-size: 0.8rem;
   font-weight: 400;
+  color: #999999;
+}
+
+.dropdown .sub-nav li a:hover,
+.side-nav .nav-item a:hover {
+  color: rgb(233, 79, 23);
 }
 
 .jumbotron {
@@ -152,7 +159,39 @@ header nav {
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
 }
+
+.side-nav .nav-item a {
+  font-size: 0.8789rem;
+  font-weight: 400;
+}
 /* side-nav */
+
+/* main styling */
+main {
+  background-color: #e7e7e7;
+  padding: 1rem;
+  margin-left: 2rem;
+}
+/* end main styling */
+
+/* footer styling */
+footer {
+  background-color: rgb(233, 79, 23);
+}
+
+footer .univ-info {
+  background-color: #e7e7e7;
+  color: #999999;
+  padding: 1.4rem 0;
+}
+
+footer .copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+}
+/* end footer styling */
 
 /* animations */
 @keyframes fade-down {

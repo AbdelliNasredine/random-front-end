@@ -1,1 +1,0 @@
-# Random front end projects

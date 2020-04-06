@@ -165,7 +165,7 @@ main {
 
 main > h5 {
   margin: 0;
-  padding: 1rem 1%;
+  padding: 1rem 0;
   color: #999999;
 }
 
@@ -173,8 +173,7 @@ main .search-form {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 98%;
-  margin: 1%;
+  min-width: 100%;
 }
 .input-field {
   display: flex;
@@ -198,28 +197,33 @@ main .search-form {
 }
 
 .book {
-  flex: 1 0 23%;
-  margin: 1%;
-  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  padding: 1%;
   transition: all 0.2s ease-in-out;
 }
 
 .book:hover {
-  box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
-.book img {
+.book .book-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  height: auto;
-  background-color: #999999;
+  height: 10rem;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
-.book-info {
+.book .book-info {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
   color: #999999;
+  background-color: #ffffff;
 }
 
 .book-info .book-title {

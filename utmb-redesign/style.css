@@ -123,19 +123,13 @@ header nav {
   color: #999999;
   align-items: center;
   justify-content: center;
-  font-size: 1.4rem;
 }
 
 .faculty * {
+  font-size: 1.6rem;
   margin: 0;
-  padding: 1rem;
-}
-
-.icon {
-  align-self: center;
-  width: 10px;
-  height: 10px;
-  background-color: #999999;
+  padding: 1rem 0.5rem;
+  line-height: 1.5;
 }
 
 /* side-nav */
@@ -179,6 +173,8 @@ main .search-form {
   display: flex;
   width: 100%;
   background-color: #ffffff;
+  color: #999999;
+  align-items: center;
   padding: 0 1rem;
 }
 .input-field input {
@@ -217,11 +213,16 @@ main .search-form {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
+.book .book-image * {
+  color: #6d6d6d;
+  font-size: 2.5rem;
+}
+
 .book .book-info {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 0.5rem 1rem;
   color: #999999;
   background-color: #ffffff;
 }
@@ -233,9 +234,9 @@ main .search-form {
 
 .btn-download {
   border: none;
-  background-color: #999999;
-  height: 20px;
-  width: 20;
+  background-color: transparent;
+  color: #999999;
+  text-align: center;
 }
 
 /* end books section */

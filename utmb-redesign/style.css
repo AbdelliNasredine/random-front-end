@@ -273,15 +273,27 @@ footer .copyright {
 }
 
 /* media query's */
-@media screen and (min-width: 40em) {
-  .card {
-    max-width: calc(50% - 1em);
+@media screen and (max-width: 960px) {
+  .book {
+    width: 33%;
   }
 }
 
-@media screen and (min-width: 60em) {
-  .card {
-    max-width: calc(25% - 1em);
+@media screen and (max-width: 730px) {
+  .book {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  main {
+    margin-left: 0;
+  }
+  .book {
+    width: 100%;
+  }
+  .side-nav {
+    display: none;
   }
 }
 

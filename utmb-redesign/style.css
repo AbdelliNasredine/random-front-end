@@ -284,3 +284,8 @@ footer .copyright {
     max-width: calc(25% - 1em);
   }
 }
+
+/* util classes */
+.fixed {
+  position: fixed;
+}
